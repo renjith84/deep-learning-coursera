@@ -1,4 +1,4 @@
-Which of the following are true? (Check all that apply.)
+1) Which of the following are true? (Check all that apply.)
 
 [X] X is a matrix in which each column is one training example.
 
@@ -15,27 +15,27 @@ Which of the following are true? (Check all that apply.)
 [ ] a<sup>[2](12)</sup> denotes activation vector of the 12th layer on the 2nd training example.
 
 
-The tanh activation usually works better than sigmoid activation function for hidden units because the mean of its output is closer to zero, and so it centers the data better for the next layer. True/False?
+2) The tanh activation usually works better than sigmoid activation function for hidden units because the mean of its output is closer to zero, and so it centers the data better for the next layer. True/False?
 
 [x] True
 
 [ ] False
 
-Which of these is a correct vectorized implementation of forward propagation for layer ll, where 1 < = l < = L?
+3) Which of these is a correct vectorized implementation of forward propagation for layer ll, where 1 < = l < = L?
 
 [x] Z<sup>[l]</sup> = W<sup>[1]</sup>A<sup>[l-1]</sup> + b<sup>[l]</sup>
     A<sup>[l]</sup> = g<sup>[l]</sup>(Z<sup>[l]</sup>)
     
-You are building a binary classifier for recognizing cucumbers (y=1) vs. watermelons (y=0). Which one of these activation functions would you recommend using for the output layer?
+4) You are building a binary classifier for recognizing cucumbers (y=1) vs. watermelons (y=0). Which one of these activation functions would you recommend using for the output layer?
 sigmoid
 
-Consider the following code:
+5) Consider the following code:
 A = np.random.randn(4,3)
 B = np.sum(A, axis = 1, keepdims = True)
 
 (4, 1)
 
-Suppose you have built a neural network. You decide to initialize the weights and biases to be zero. Which of the following statements is true?
+6) Suppose you have built a neural network. You decide to initialize the weights and biases to be zero. Which of the following statements is true?
 
 [X] Each neuron in the first hidden layer will perform the same computation. So even after multiple iterations of gradient descent each neuron in the layer will be computing the same thing as other neurons.
 
@@ -45,12 +45,12 @@ Suppose you have built a neural network. You decide to initialize the weights an
 
 [ ] The first hidden layer’s neurons will perform different computations from each other even in the first iteration; their parameters will thus keep evolving in their own way.
 
-Logistic regression’s weights w should be initialized randomly rather than to all zeros, because if you initialize to all zeros, then logistic regression will fail to learn a useful decision boundary because it will fail to “break symmetry”, True/False?
+7) Logistic regression’s weights w should be initialized randomly rather than to all zeros, because if you initialize to all zeros, then logistic regression will fail to learn a useful decision boundary because it will fail to “break symmetry”, True/False?
 
 [x] True
 [ ] False
 
-You have built a network using the tanh activation for all the hidden units. You initialize the weights to relative large values, using np.random.randn(..,..)*1000. What will happen?
+8) You have built a network using the tanh activation for all the hidden units. You initialize the weights to relative large values, using np.random.randn(..,..)*1000. What will happen?
 
 [x] This will cause the inputs of the tanh to also be very large, thus causing gradients to be close to zero. The optimization algorithm will thus become slow.
 
