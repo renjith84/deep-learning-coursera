@@ -1,3 +1,5 @@
+## Week 3 Quiz - Shallow neural networks
+
 1) Which of the following are true? (Check all that apply.)
 
 -[x] X is a matrix in which each column is one training example.
